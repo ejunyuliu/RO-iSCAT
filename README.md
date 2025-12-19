@@ -48,7 +48,7 @@ Here's a demo for running `RO-iSCAT_iPSF.py`
 
 Step 1: Click 'Run'
 
-Step 2: Get the following results on comparison between iSCAT and RO-iSCAT iPSF.
+Step 2: Get the following results on comparison between iSCAT and RO-iSCAT iPSF, in a few seconds.
 
 ![Example](Demo/iPSF.png)
 
