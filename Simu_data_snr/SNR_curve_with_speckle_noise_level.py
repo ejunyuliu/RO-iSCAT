@@ -59,7 +59,7 @@ if __name__ == '__main__':
     yv = yv * fov
 
     sigma_list = np.arange(0, 0.2, 0.005)
-    repeat_num = 10
+    repeat_num = 1
 
     RO_noise_var_list = np.zeros((len(sigma_list), repeat_num))
     RO_SNR_list = np.zeros((len(sigma_list), repeat_num))
@@ -75,8 +75,11 @@ if __name__ == '__main__':
     mask_sig = np.zeros_like(xv).astype(np.bool_)
     mask_sig[b:-b, b:-b] = 1
 
+    theta = 22
+    print(theta)
+
     noRO_pattern_signal = iPSF_misalignment(xv, yv, k, 0, 0, 0, 0.3, np.pi / 2, 0, np.array([0]))
-    RO_pattern_signal = iPSF_misalignment(xv, yv, k, 0, 0, 0, 0.3, np.pi / 2, 22, np.arange(0, 360, 10))
+    RO_pattern_signal = iPSF_misalignment(xv, yv, k, 0, 0, 0, 0.3, np.pi / 2, theta, np.arange(0, 360, 10))
 
     noRO_signal_var = np.var(noRO_pattern_signal[mask_sig])
     RO_signal_var = np.var(RO_pattern_signal[mask_sig])
@@ -114,7 +117,7 @@ if __name__ == '__main__':
                         RO_pattern_noise = RO_pattern_noise + noise[i, j] * iPSF_misalignment(xv, yv, k, xv[i, j],
                                                                                               yv[i, j],
                                                                                               1000, 0.3,
-                                                                                              np.pi / 2, 22,
+                                                                                              np.pi / 2, theta,
                                                                                               np.arange(0, 360, 10))
             RO_pattern = RO_pattern_signal + RO_pattern_noise
             RO_noise_var = np.var(RO_pattern[mask_bkg])
