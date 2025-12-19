@@ -52,7 +52,18 @@ if __name__ == '__main__':
     iPSF = np.zeros_like(xv)
 
     iPSF_RO = 0
-    zpp = 1000
+    zpp = 10
     for phi in range(0, 360, 5):
         phi_ma, phi_de, phi_diff, iPSF_cos, iPSF = iPSF_misalignment(xv, yv, k, 0, 0, zpp, 0.3, np.pi / 2, 22, phi)
         iPSF_RO = iPSF_RO + iPSF
+
+    plt.figure()
+    plt.imshow(iPSF)
+    plt.title('iSCAT iPSF')
+    plt.show()
+
+    plt.figure()
+    plt.imshow(iPSF_RO)
+    plt.title('RO-iSCAT iPSF')
+    plt.show()
+
