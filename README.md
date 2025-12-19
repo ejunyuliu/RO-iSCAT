@@ -35,7 +35,7 @@ RO-iSCAT/
 ├── Simu_data_snr/
 │   ├── SNR_curve_with_speckle_noise_level.py: SNR curves for RO-iSCAT and iSCAT as a function of speckle noise strength
 │   └── SNR_imgs_with_speckle_noise_level.py: iSCAT and RO-iSCAT images at different speckle noise levels
-└── Simu_data_snr/
+└── Tunable_coherence/
     ├── RO-iSCAT_vs_Broadband_SNR_varying_noise.py: Performance of RO-iSCAT vs. broadband illumination iSCAT under varying noise strength
     └── RO-iSCAT_vs_Broadband_SNR_varying_coherence.py: Noise suppression performance of RO-iSCAT (varying oblique angle) and broadband illumination iSCAT (varying spectrum width)
 ```
