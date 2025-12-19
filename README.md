@@ -50,7 +50,7 @@ Step 1: Click 'Run'
 
 Step 2: Get the following results on comparison between iSCAT and RO-iSCAT iPSF.
 
-![Example](Demo/iPSF.png)
+![Example](Demo/iPSF.tif)
 
 
 ## Acknowledgement
