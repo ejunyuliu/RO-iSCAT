@@ -47,10 +47,10 @@ You can get a click-one result in each file.
 Here's a demo for running `RO-iSCAT_iPSF.py`
 
 Step 1: Click 'Run'
+
 Step 2: Get the following results on comparison between iSCAT and RO-iSCAT iPSF.
 
-![Example](Demo/iSCAT.png)
-![Example](Demo/RO-iSCAT.png)
+![Example](Demo/iPSF.png)
 
 
 ## Acknowledgement
