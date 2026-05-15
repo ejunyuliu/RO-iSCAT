@@ -2,7 +2,7 @@
 
 This is the companion modelling code to our paper:
 
-[Using rotational integration of oblique interferometric scattering (RO-iSCAT) to track axial spatiotemporal responses of membrane protrusions](https://www.biorxiv.org/content/10.1101/2025.03.23.644841v1).
+[Using rotational integration of oblique interferometric scattering to track axial spatiotemporal responses of tubular membrane protrusions](https://www.nature.com/articles/s41467-026-72302-1).
 
 
 ## System Requirements
