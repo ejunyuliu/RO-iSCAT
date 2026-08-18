@@ -1,6 +1,6 @@
 # RO-iSCAT
 
-This is the companion modelling code to our paper:
+This is the companion modelling code to our paper published on _Nature Communications_:
 
 [Using rotational integration of oblique interferometric scattering to track axial spatiotemporal responses of tubular membrane protrusions](https://www.nature.com/articles/s41467-026-72302-1).
 
